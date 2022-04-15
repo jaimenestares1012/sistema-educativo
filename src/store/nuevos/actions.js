@@ -1,4 +1,5 @@
-import {  conversor, sube, details, actualizarform } from "@/api";
+
+import {  conversor, details, actualizarform } from "@/api";
 export async function consulta ({ commit}, payload) {
   console.log(payload);
   try {

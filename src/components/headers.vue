@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="headers " style="margin: 10px 20px 0px 20px; display: flex">
-             <a href="/inspire"><img src="https://acceso.com.pe/wp-content/uploads/2022/03/san-marcos-2.png" width="200px" height="80px" alt=""></a>           
+             <a href="/prueba"><img src="https://acceso.com.pe/wp-content/uploads/2022/03/san-marcos-2.png" width="200px" height="80px" alt=""></a>           
              <v-btn @click="categorias()" color="#ddeaee" style="margin-left:5px; margin-top: 20px">
                 Categorías
             </v-btn>

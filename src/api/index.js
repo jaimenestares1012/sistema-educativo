@@ -26,4 +26,4 @@ async function conversor(payload) {
 
 
 
-export {conversor, sube, details, actualizarform };
+export {conversor};

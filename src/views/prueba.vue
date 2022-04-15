@@ -284,7 +284,6 @@ export default {
         const estado="a"
         console.log("en el mounted");
         this.$store.dispatch('nuevos/consulta', estado)
-        this.$store.commit('nuevos/DETALLES', estado)
         
     },
 }
