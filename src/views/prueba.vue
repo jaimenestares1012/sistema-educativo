@@ -225,6 +225,7 @@
 <script>
 import headers from '@/components/headers'
 import usuario from '@/components/usuario'
+import { mapGetters } from "vuex";
 export default {
     components:{
         headers,
@@ -280,6 +281,10 @@ export default {
         // setTimeout(() => (this.loading = false), 2000)
       },
     },
+    computed: {
+         ...mapGetters("nuevos", ["datosgeneral"])
+
+    },
     mounted () {
         const estado="a"
         console.log("en el mounted");
@@ -293,7 +298,7 @@ export default {
 .container-card{
     max-width: 1200px;
     background: rgb(241, 241, 241);
-    margin-left: 20px;
+    margin-left: 100px;
     padding-left: 10px;
 }
 
