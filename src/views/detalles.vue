@@ -16,9 +16,9 @@
         <center>
             
             <div class="container-div" >
-                <!-- <div v-if="estadoEditar">
+                <div v-if="estadoEditar">
                     <div style="display: flex; margin-left: 170px ; padding-top:10px">
-                        <p style="width:100px">Nombre curso: </p>
+                        <p style="width:100px; text-align: initial " >Curso: </p>
                         <p style="margin-left:50px">{{detalles.nombre}}</p>
                     </div> 
                     <div style="display: flex; margin-left: 170px; margin-top:10px">
@@ -37,8 +37,8 @@
                     >
                         Editar
                 </v-btn>
-                </div> -->
-                <!-- <div v-if="estadoEdicion">
+                </div>
+                <div v-if="estadoEdicion">
                     <div style="display: flex; margin-left: 170px ; padding-top:10px">
                         <p style="width:100px; margin-right:20px">Nombre curso: </p>
                          <v-text-field
@@ -75,7 +75,7 @@
                     >
                         actualizar
                     </v-btn>
-                </div> -->
+                </div>
             </div>
         </center>
         

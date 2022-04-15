@@ -26,6 +26,7 @@ export async function detalles ({ commit}, payload) {
   console.log(payload);
   try {
     const response = await details(payload);
+    console.log("response detalles", response);
     commit('DETALLES',response )
    
   } catch (e) {
