@@ -93,4 +93,4 @@ async function actualizarform(payload) {
 
 
 
-export {conversor, details, actualizarform};
+export {conversor, sube ,details, actualizarform};

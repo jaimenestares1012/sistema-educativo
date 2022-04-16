@@ -1,5 +1,5 @@
 
-import {  conversor, details, actualizarform } from "@/api";
+import {  conversor, details, sube, actualizarform } from "@/api";
 export async function consulta ({ commit}, payload) {
   console.log(payload);
   try {
@@ -15,6 +15,7 @@ export async function subiendo ({ commit}, payload) {
   console.log(payload);
   try {
     const response = await sube(payload);
+    console.log("esta es la respuesta luego de subir", response);
     // commit('RESPUESTA',response )
   } catch (e) {
     console.log(e)

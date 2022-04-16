@@ -79,11 +79,12 @@ export default {
         const estado="a"
         console.log(this.titulo,this.descripcion, this.categoria, this.precio );
         const payload={
-            "nombre":this.titulo
+            "nombre":this.titulo,
+            "precio": this.precio
         }
         this.$store.dispatch('nuevos/subiendo', payload)
         
-        // window.location.href = '/prueba';
+        window.location.href = '/prueba';
 
     },
      

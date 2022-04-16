@@ -40,7 +40,7 @@
                             </v-row>
                             <br>
                             <div class="my-4 text-subtitle-1">
-                                profesor
+                              S/.  {{ esto.precio }}
                             </div>
 
                             
@@ -72,9 +72,9 @@
             </div>
             <div style="display:flex">
                 <div  v-for="(esto, index) in datosgeneral" :key="esto">
-                    
                     <div v-if="existe(index)" >
                         <v-card
+                            @click="sedaclick(esto.id)"
                             v-if="esto.id"
                             class="my-3"
                             max-width="220px"
@@ -108,7 +108,7 @@
                             </v-row>
                             <br>
                             <div class="my-4 text-subtitle-1">
-                                profesor
+                                 {{esto.precio}}
                             </div>
 
                             
@@ -139,10 +139,10 @@
                 </div>   
             </div>
             <div style="display:flex" v-if="estadoVermas"> 
-                <div  v-for="(esto, index) in datosgeneral" :key="esto">
-                    
+                <div  v-for="(esto, index) in datosgeneral" :key="esto">        
                     <div v-if="existe(index)" >
                         <v-card
+                            @click="sedaclick(esto.id)"
                             v-if="esto.id"
                             class="my-3"
                             max-width="220px"
@@ -176,7 +176,7 @@
                             </v-row>
                             <br>
                             <div class="my-4 text-subtitle-1">
-                                profesor
+                                 {{ esto.precio }}
                             </div>
 
                             
